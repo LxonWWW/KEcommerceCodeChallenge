@@ -3,7 +3,17 @@
 # Usage
 
 ### Run the script
-`php ./run.php './feed.xml' ('updateallowed')`
+```
+cd 'KEcommerceCodeChallenge'
+
+Example 1: php run.php 'YOUR_FILE.xml'
+
+Example 2: php ./run.php 'YOUR_FILE.xml' 'updateallowed'
+
+---
+
+eg. php ./run.php './feed.xml' 'updateallowed'
+```
 
 ### Parameters
 ```
@@ -19,9 +29,11 @@ Please refer to the [manual here](https://www.php.net/manual/en/pdo.installation
 # Summary
 
 This program imports data from an xml file and imports it to the specified database.
-By default this is a sqlite database for better testing on other devices (requires less setup).
-The user can choose if data should be updated if it has changed by the 'updateallowed' parameter (See Parameters 3.).
+By default this is a sqlite database, located in the php directory in "`./external/php/ext/`", for better testing on other devices (requires less setup).
+The user can choose if data should be updated, if it has changed by the 'updateallowed' parameter (See Parameters 3.).
 Errors are logged to the error.log file in the root directory.
+
+**It was chosen to use vanilla PHP (with default libraries) because it's sufficient enough for this task, doesn't need a lot to set-up before using and more portable. In an productive environment with for example symfony I would rather still use symfony of course, if thats what we rely on.**
 
 # Given Task: Coding Task – Data Feed 
 ### (Junior) PHP Engineer (all genders)
