@@ -22,6 +22,8 @@ Parameter 2.: The XML file to process.
 Parameter 3.: If data in the database that already exists should be updated, if something has changed. (Optional: Can be empty)
 ```
 
+**PROTIP: You can use the portable php excutable in "`\external\php\ext`" if you're on windows, so no setup is needed :).**
+
 # Specifing the target database
 You can find a config.json in the projects root directory. Just change the data there to change the target database.
 Please refer to the [manual here](https://www.php.net/manual/en/pdo.installation.php) to configure your server accordingly and to see the available database drivers.
@@ -33,7 +35,7 @@ By default this is a sqlite database, located in the php directory in "`./extern
 The user can choose if data should be updated, if it has changed by the 'updateallowed' parameter (See Parameters 3.).
 Errors are logged to the error.log file in the root directory.
 
-**It was chosen to use vanilla PHP (with default libraries) because it's sufficient enough for this task, doesn't need a lot to set-up before using and more portable. In an productive environment with for example symfony I would rather still use symfony of course, if thats what we rely on.**
+**It was chosen to use vanilla PHP (with default libraries) because it's sufficient enough for this task, doesn't need a lot to set-up before using and is more portable. In an productive environment with for example symfony I would rather still use symfony of course, if thats what we rely on.**
 
 # Given Task: Coding Task – Data Feed 
 ### (Junior) PHP Engineer (all genders)
