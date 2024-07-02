@@ -1,0 +1,12 @@
+{
+    "database": {
+        "database_driver": "sqlite",
+        "database_name": "ECommerceDBs.db",
+        "database_hostname": "",
+        "database_charset": ""
+    },
+    "database_user": {
+        "username": "",
+        "password": ""
+    }
+}
