@@ -19,7 +19,7 @@ eg. php ./run.php './feed.xml' 'updateallowed'
 ```
 Parameter 1.: This project's PHP file.
 Parameter 2.: The XML file to process.
-Parameter 3.: If data in the database, that already exists should be updated, if something has changed. (Optional: Can be empty)
+Parameter 3.: If data in the database that already exists should be updated, if something has changed. (Optional: Can be empty)
 ```
 
 **PROTIP: You can use the portable php excutable in "`\external\php\ext`" if you're on windows, so no setup is needed :).**

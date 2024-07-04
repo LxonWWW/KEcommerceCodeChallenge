@@ -5,13 +5,11 @@
 */
 
 class CliComponent {
-    function __construct() {
-
-    }
-
     /*
     $text - The text to output in the console
     $color - An ANSI formatted color code, see https://misc.flogisoft.com/bash/tip_colors_and_formatting for reference
+    $type - Defines the type of the message. When set to error it will be written to the log and the program will quit.
+    $issuer - Defines the issuer of the message (the text in the square brackets at the beginning of each message)
     */
     public function println(string $text, string $color="\e[0m", string $type="message", string $issuer="System") {
         echo $color."[".$issuer."] ".$text."\e[0m\n";
@@ -28,7 +26,6 @@ class CliComponent {
 
     public function getColor(string $color) {
         switch($color) {
-
             case "black":
                 return "\e[30m";
                 break;

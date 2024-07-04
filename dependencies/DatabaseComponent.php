@@ -5,17 +5,16 @@
 */
 
 class DatabaseComponent {
-	// *** Database Credentials ***
 	private $databaseAccessCredentials = array();
 	
 	private $sqlDatabase = null;
 	
-	/* Returns the database object */
+	// Returns the database object
 	public function getDatabase() {
 		return $this->sqlDatabase;
 	}
-	///
-	/* Initiates database connection */
+
+	// Initiates database connection
 	public function initConnection() {
 		$__sqlDatabase = null;
 

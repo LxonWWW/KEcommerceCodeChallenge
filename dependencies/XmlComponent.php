@@ -5,10 +5,6 @@
 */
 
 class XmlComponent {
-	public function __construct() {
-		
-	}
-
     public function parseXML($filepath) {
 		try {
             $XmlValidator = XMLReader::open($filepath);
